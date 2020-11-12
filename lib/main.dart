@@ -1,22 +1,18 @@
 import 'package:flutter/material.dart';
- 
+
+// import 'package:components_flutter/src/pages/home_temp.dart';
+import 'package:components_flutter/src/pages/home_page.dart';
+
 void main() => runApp(MyApp());
  
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Material App',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Material App Bar'),
-        ),
-        body: Center(
-          child: Container(
-            child: Text('Hello World'),
-          ),
-        ),
-      ),
+      title: 'Componentes App',
+      debugShowCheckedModeBanner: false,
+      // home: HomeTempPage(),
+      home: HomePage(),
     );
   }
 }
